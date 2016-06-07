@@ -9,10 +9,10 @@ class DeviceDriver:
     def __init__(self, device):
         self.device = device
 
-    def store(self, address, data):
+    def write(self, address, data):
         #TODO: implement this method
         pass
 
-    def retrieve(self, address):
+    def read(self, address):
         #TODO: implement this method
         pass
