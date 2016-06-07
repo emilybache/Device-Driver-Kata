@@ -1,3 +1,6 @@
 __pycache__
 *.pyc
 .cache
+Java/.idea
+Java/target
+*.iml
