@@ -7,6 +7,7 @@ import org.junit.Test;
 
 public class DeviceDriverTest {
 
+    @Test
     public void read_From_Hardware() {
         FlashMemoryDevice hardware = new MockFlashMemoryDevice();
         DeviceDriver driver = new DeviceDriver(hardware);
