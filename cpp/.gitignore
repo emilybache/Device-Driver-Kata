@@ -1,0 +1,4 @@
+Bin/
+build/
+*.compiled_hpp
+test
