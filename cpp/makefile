@@ -1,5 +1,5 @@
 CXXFLAGS += -I. -std=c++11 -Wall -Wextra
-GTEST_LIBS = -lgtest -lgtest_main -pthread
+GTEST_LIBS = -lgtest -lgmock -lgmock_main -pthread
 
 HPP_FILES = $(wildcard *.hpp)
 COMPILED_HPP_FILES = $(patsubst %.hpp,%.compiled_hpp,$(HPP_FILES))
