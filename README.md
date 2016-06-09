@@ -51,6 +51,14 @@ Device Driver Kata User Stories
 
 6) So far we have assumed the ready bit will always be set at some point. Handle the case when it is not set, even after waiting for 5 milliseconds. In order to achieve this your test should not have to wait 5 milliseconds, you should use a test double to change the time perceived by the device driver. The device driver should stop waiting after 5 milliseconds and report the error to the operating system.
 
+Get going quickly with cyber-dojo
+---------------------------------
+
+You can quickly and easily get going with this Code Kata using the cyber-dojo tool. Click on the relevant link below
+to create a new cyber-dojo practice id with the problem set up ready for your dojo.
+
+- [C++](http://www.cyber-dojo.org/forker/fork/2B69AF0E47?avatar=hyena&tag=12)
+
 Credits
 -------
 
