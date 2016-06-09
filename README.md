@@ -3,7 +3,7 @@ Device Driver Kata
 
 Have you ever tried to plug a computer running an unusual flavour of unix into an unfamiliar projector? For example at a conference when you're supposed to be giving a talk in front of hundreds of people? It's at that point you realize the importance of the humble device driver. If the driver for the specific projector is not installed on your machine, you could end up presenting with an embarassingly blank screen!
 
-In this Kata, your job is to implement the device driver that operates a flash memory device. The protocol for talking to the hardware is outlined below. It's a simplified version of a protocol used in a real device. The code you develop should allow the operating system to both read and write binary data to and from the device. More detailed user stories our outlined below, giving you some guidance about where to start.
+In this Kata, your job is to implement the device driver that operates a flash memory device. The protocol for talking to the hardware is outlined below. It's a simplified version of a protocol used in a real device. The code you develop should allow the operating system to both read and write binary data to and from the device.
 
 You will of course want to develop test cases alongside the code, but because you don't have access to the actual device, you will need to replace it with a test double. The device driver code should not be aware it's talking to a test double instead of the real device, only your tests should know this.
 
@@ -31,25 +31,6 @@ This will reset the error bits to zero. Note that until the 'ready bit' is set, 
 When you want to read data from the device:
 
   - simply make a call to read the contents of the address. There is no need to begin by writing the 'Program' command.
-
-Device Driver Kata User Stories
--------------------------------
-
-1) Implement a 'read' method that takes a hexidecimal memory address and returns a byte of data from the device. This method will be used by the operating system to read data from the device. The starting code includes a failing test for this story.
-
-2) Implement a 'write' method that writes a byte of data to the device at the memory address specified. It can assume the write operation is instantaneous and successful, ie the 'ready bit' is set straight away. This method will be used by the operating system to write data to the device.
-
-3) Extend the 'write' method to handle the case that the 'ready bit' is not immediately set. It is 0 until the fourth call to 'read'.
-
-4) Handle the case where the write was unsuccessful, and one of the error bits is set. Report the error to the operating system.
-
-5) Have the driver respond more specifically to the various kinds of errors. Detect and handle the following codes:
-
-  - Vpp error: Report the error.
-  - Internal error: Retry the write operation, and only report an error if it fails 3 times.
-  - Protected block error: Report the error.
-
-6) So far we have assumed the ready bit will always be set at some point. Handle the case when it is not set, even after waiting for 5 milliseconds. In order to achieve this your test should not have to wait 5 milliseconds, you should use a test double to change the time perceived by the device driver. The device driver should stop waiting after 5 milliseconds and report the error to the operating system.
 
 Get going quickly with cyber-dojo
 ---------------------------------
