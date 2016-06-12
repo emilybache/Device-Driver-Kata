@@ -1,8 +1,6 @@
 Device Driver Kata
 ==================
 
-Have you ever tried to plug a computer running an unusual flavour of unix into an unfamiliar projector? For example at a conference when you're supposed to be giving a talk in front of hundreds of people? It's at that point you realize the importance of the humble device driver. If the driver for the specific projector is not installed on your machine, you could end up presenting with an embarassingly blank screen!
-
 In this Kata, your job is to implement the device driver that operates a flash memory device. The protocol for talking to the hardware is outlined below. It's a simplified version of a protocol used in a real device. The code you develop should allow the operating system to both read and write binary data to and from the device.
 
 You will of course want to develop test cases alongside the code, but because you don't have access to the actual device, you will need to replace it with a test double. The device driver code should not be aware it's talking to a test double instead of the real device, only your tests should know this.
@@ -43,4 +41,4 @@ to create a new cyber-dojo practice id with the problem set up ready for your do
 Credits
 -------
 
-I got the idea for this Kata after reading 'Test-Driven Development for Embedded C' by James W. Grenning.
+I got the idea for this Kata after reading ['Test-Driven Development for Embedded C'](https://wingman-sw.com/test-driven-development-for-embedded-c-book) by James W. Grenning.
