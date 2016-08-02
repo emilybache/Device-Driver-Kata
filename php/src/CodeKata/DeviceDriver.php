@@ -12,7 +12,8 @@ class DeviceDriver
     /**
      * @param FlashMemoryDevice $hardware
      */
-    public function __construct($hardware) {
+    public function __construct($hardware)
+    {
     // TODO: implement this method
     }
 
@@ -20,7 +21,8 @@ class DeviceDriver
      * @param int $address
      * @return int
      */
-    public function read($address) {
+    public function read($address)
+    {
         return -1;
     }
 
@@ -28,8 +30,8 @@ class DeviceDriver
      * @param int $address
      * @param int $data
      */
-    public function write($address, $data) {
+    public function write($address, $data)
+    {
     // TODO: implement this method
     }
-
 }
