@@ -1,4 +1,3 @@
-
 namespace device
 {
     /// This class is used by the operating system to interact with the hardware 'FlashMemoryDevice'.
