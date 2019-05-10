@@ -5,6 +5,6 @@ package codekata
 // However, the interface for using the device is a lot more complex than that.
 // It is outlined in the top-level README file.
 type FlashMemoryDevice interface {
-	Read(address uint32) (byte, error)
-	Write(address uint32, data byte) error
+	Read(address uint32) byte
+	Write(address uint32, data byte)
 }

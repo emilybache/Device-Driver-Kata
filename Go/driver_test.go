@@ -7,8 +7,7 @@ import (
 )
 
 func TestReadFromHardware(t *testing.T) {
-	// TODO: replace hardware with a Test Double
-	hardware := MockHardware{}
+	hardware := makeMockHardware()
 	driver := DeviceDriver{hardware}
 
 	data, err := driver.Read(0xFF)
@@ -17,13 +16,17 @@ func TestReadFromHardware(t *testing.T) {
 	assert.NoError(t, err)
 }
 
-type MockHardware struct {
+type mockHardware struct {
 }
 
-func (hardware MockHardware) Read(address uint32) (byte, error) {
-	return 0, nil
+func makeMockHardware() *mockHardware {
+	return &mockHardware{}
 }
 
-func (hardware MockHardware) Write(address uint32, data byte) error {
-	return nil
+func (mock *mockHardware) Read(address uint32) byte {
+	return 0
+}
+
+func (mock *mockHardware) Write(address uint32, data byte) {
+
 }
