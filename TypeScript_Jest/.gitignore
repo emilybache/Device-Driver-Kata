@@ -1,0 +1,26 @@
+.DS_Store
+
+# NPM
+node_modules/
+npm-debug.log*
+package-lock.json
+typings
+
+src/**/*.js
+src/**/*.js.map
+test/**/*.js
+test/**/*.js.map
+
+dist/
+coverage/
+*.lcov
+
+# Eclipse
+.project
+.settings
+.classpath
+
+# IDEA
+.idea
+*.iml
+*.iwr
