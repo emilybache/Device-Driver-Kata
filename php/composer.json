@@ -1,6 +1,7 @@
 {
     "name": "dojo/device-driver-kata",
     "description": "Device Driver Kata",
+    "license": "MIT",
     "require": {
         "php": "^5.6"
     },
@@ -12,6 +13,5 @@
         "psr-4" : {
             "CodeKata\\": ["src/CodeKata", "tests/CodeKata"]
         }
-    },
-    "license": "MIT"
+    }
 }
