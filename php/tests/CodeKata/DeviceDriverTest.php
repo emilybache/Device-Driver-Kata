@@ -1,6 +1,6 @@
 <?php
 
-namespace CodeKata\Tests;
+namespace Tests;
 
 use CodeKata\DeviceDriver;
 use CodeKata\FlashMemoryDevice;
