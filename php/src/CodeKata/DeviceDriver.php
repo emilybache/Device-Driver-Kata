@@ -4,8 +4,8 @@
 namespace CodeKata;
 
 /**
- * This class is used by the operating system to interact with the hardware 'FlashMemoryDevice'.
- * @package CodeKata
+ * This class is used by the operating system to interact
+ * with the hardware 'FlashMemoryDevice'. @see FlashMemoryDevice
  */
 class DeviceDriver
 {
