@@ -1,6 +1,6 @@
 {
     "name": "dojo/device-driver-kata",
-    "description": "device driver kata",
+    "description": "Device Driver Kata",
     "require": {
         "php": "^5.6"
     },
