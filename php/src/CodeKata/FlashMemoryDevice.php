@@ -1,5 +1,6 @@
 <?php
 
+declare(strict_types=1);
 
 namespace CodeKata;
 
@@ -13,13 +14,14 @@ interface FlashMemoryDevice
 {
     /**
      * @param int $address
-     * @return int mixed
+     * @return int
      */
-    public function read($address);
+    public function read(int $address): int;
 
     /**
      * @param int $address
      * @param int $data
+     * @return void
      */
-    public function write($address, $data);
+    public function write(int $address, int $data): void;
 }
