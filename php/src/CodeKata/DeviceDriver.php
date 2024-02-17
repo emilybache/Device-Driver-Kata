@@ -1,6 +1,5 @@
 <?php
 
-
 namespace CodeKata;
 
 /**
@@ -14,7 +13,7 @@ class DeviceDriver
      */
     public function __construct($hardware)
     {
-    // TODO: implement this method
+        // TODO: implement this method
     }
 
     /**
@@ -32,6 +31,6 @@ class DeviceDriver
      */
     public function write($address, $data)
     {
-    // TODO: implement this method
+        // TODO: implement this method
     }
 }
