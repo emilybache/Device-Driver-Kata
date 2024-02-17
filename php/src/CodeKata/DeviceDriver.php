@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace CodeKata;
 
 /**
@@ -20,7 +22,7 @@ class DeviceDriver
      * @param int $address
      * @return int
      */
-    public function read($address)
+    public function read(int $address): int
     {
         return -1;
     }
@@ -28,8 +30,9 @@ class DeviceDriver
     /**
      * @param int $address
      * @param int $data
+     * @return void
      */
-    public function write($address, $data)
+    public function write(int $address, int $data): void
     {
         // TODO: implement this method
     }
