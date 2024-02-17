@@ -1,5 +1,6 @@
 <?php
 
+namespace CodeKata\Tests;
 
 namespace CodeKata;
 

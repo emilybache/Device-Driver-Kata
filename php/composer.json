@@ -11,7 +11,12 @@
     },
     "autoload": {
         "psr-4" : {
-            "CodeKata\\": ["src/CodeKata", "tests/CodeKata"]
+            "CodeKata\\": "src/CodeKata"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "CodeKata\\Tests\\": "tests/CodeKata"
         }
     }
 }
