@@ -1,9 +1,12 @@
 <?php
 
+namespace Tests;
 
-namespace CodeKata;
+use CodeKata\DeviceDriver;
+use CodeKata\FlashMemoryDevice;
+use PHPUnit\Framework\TestCase;
 
-class DeviceDriverTest extends \PHPUnit_Framework_TestCase
+class DeviceDriverTest extends TestCase
 {
 
     public function testReadFromHardware()

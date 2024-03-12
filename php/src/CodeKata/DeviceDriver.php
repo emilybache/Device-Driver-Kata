@@ -1,11 +1,12 @@
 <?php
 
+declare(strict_types=1);
 
 namespace CodeKata;
 
 /**
- * This class is used by the operating system to interact with the hardware 'FlashMemoryDevice'.
- * @package CodeKata
+ * This class is used by the operating system to interact
+ * with the hardware 'FlashMemoryDevice'. @see FlashMemoryDevice
  */
 class DeviceDriver
 {
@@ -14,14 +15,14 @@ class DeviceDriver
      */
     public function __construct($hardware)
     {
-    // TODO: implement this method
+        // TODO: implement this method
     }
 
     /**
      * @param int $address
      * @return int
      */
-    public function read($address)
+    public function read(int $address): int
     {
         return -1;
     }
@@ -29,9 +30,10 @@ class DeviceDriver
     /**
      * @param int $address
      * @param int $data
+     * @return void
      */
-    public function write($address, $data)
+    public function write(int $address, int $data): void
     {
-    // TODO: implement this method
+        // TODO: implement this method
     }
 }
